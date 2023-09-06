@@ -1,0 +1,15 @@
+# 예상 시간복잡도: O(n)
+def solution(arr):
+    answer = []
+    for i in arr:
+        if i >= 50:
+            if i % 2 == 0:
+                answer.append(i / 2)
+            else:
+                answer.append(i)
+        else:
+            if i % 2 == 1:
+                answer.append(i * 2)
+            else:
+                answer.append(i)
+    return answer
