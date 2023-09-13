@@ -1,0 +1,8 @@
+# 예상 시간복잡도: O(1)
+def solution(num, n):
+    answer = 0
+    if num % n == 0:
+        answer = 1
+    else:
+        answer = 0
+    return answer
