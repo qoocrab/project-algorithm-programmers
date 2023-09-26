@@ -1,17 +1,13 @@
 # 예상 시간복잡도: O(N)
 def solution(score):
-    tmp = []
-    for idx, i in enumerate(score):
-        tmp.append([sum(i)/2,idx])
-    
-    tmp = sorted(tmp, reverse=True)
+    sorted_score = sorted([[sum(i)/2, idx] for idx, i in enumerate(score)], reverse=True) # [평균점수, 원배열에서의 idx]
     res = [0] * len(score)
-    res[tmp[0][1]] = 1
+    res[sorted_score[0][1]] = 1
     ck = 1
     
     for i in range(1, len(res)):
-        if tmp[i-1][0] != tmp[i][0]: 
+        if sorted_score[i-1][0] != sorted_score[i][0]: 
             ck = i+1
-        res[tmp[i][1]] = ck
+        res[sorted_score[i][1]] = ck
         
     return res
