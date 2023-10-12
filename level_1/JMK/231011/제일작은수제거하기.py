@@ -6,4 +6,3 @@ def solution(arr):
         return arr
     else:
         return [-1]
-    
