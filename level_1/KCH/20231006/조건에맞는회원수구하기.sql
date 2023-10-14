@@ -1,0 +1,3 @@
+-- 예상 시간복잡도: O(N)
+SELECT COUNT(*) AS USERS FROM USER_INFO
+WHERE 20<= AGE and AGE <=29 and JOINED LIKE '2021%';
