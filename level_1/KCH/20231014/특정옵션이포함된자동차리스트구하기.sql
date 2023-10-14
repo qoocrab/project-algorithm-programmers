@@ -1,0 +1,4 @@
+-- 예상 시간복잡도: O(NlogN)
+SELECT * FROM CAR_RENTAL_COMPANY_CAR
+WHERE OPTIONS LIKE '%네비게이션%'
+ORDER BY CAR_ID desc;
