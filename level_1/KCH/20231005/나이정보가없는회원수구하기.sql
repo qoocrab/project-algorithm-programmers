@@ -1,0 +1,3 @@
+-- 예상 시간복잡도: O(N)
+SELECT COUNT(*) AS USERS FROM USER_INFO
+WHERE AGE is NULL;

@@ -1,0 +1,2 @@
+-- 예상 시간복잡도: O(N)
+SELECT MAX(DATETIME) FROM ANIMAL_INS;
