@@ -1,4 +1,4 @@
-# 예상 시간복잡도: O(N)
+# 예상 시간복잡도: O(NK)
 def solution(id_list, report, k):
     status = {ID : 0 for ID in id_list} # 누적 신고수
     player = {ID : [] for ID in id_list} # ID를 신고한 사람 명단
