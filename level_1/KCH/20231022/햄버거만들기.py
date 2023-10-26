@@ -1,11 +1,12 @@
-
+# 예상 시간복잡도: O(N)
 def solution(ingredient):
+    stack = []
     cnt = 0
-    ing_str = ''.join(list(map(str,ingredient)))
-    while idx:=(ing_str.find('1231')+1):
-        if idx<1: break
-        idx -= 1
-        cnt += 1
-        ing_str = ing_str[:idx] + ing_str[idx+4:]
-
+    
+    for i in ingredient:
+        stack.append(i)
+        if stack[-4:] == [1,2,3,1]:
+            del stack[-4:]
+            cnt += 1
+            
     return cnt
