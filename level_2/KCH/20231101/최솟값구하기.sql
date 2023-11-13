@@ -1,0 +1,2 @@
+-- 예상 시간복잡도: O(N)
+SELECT MIN(DATETIME) FROM ANIMAL_INS;
